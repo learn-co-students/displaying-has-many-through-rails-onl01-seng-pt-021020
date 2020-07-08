@@ -7,3 +7,5 @@ Comments:
     <%= link_to comment.user.username, user_path(comment.user) %> said
     <%= comment.content %>
   <% end %>
+
+  #Calling comment.user returns for us the User object associated with that comment. We can then call any method that our user responds to, such as username.
